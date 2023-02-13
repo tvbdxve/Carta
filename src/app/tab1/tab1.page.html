@@ -12,6 +12,21 @@
       <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
   </ion-header>
+  
+  <ion-card>
+    <img alt="Silhouette of mountains" src="https://th.bing.com/th/id/OIP.2UMahTvCgkYab3rTXKeuqwHaFO?pid=ImgDet&rs=1" />
+    <ion-card-header>
+      <ion-card-title>The last of us</ion-card-title>
+      <ion-card-subtitle class="remas">Remastered</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Adentrate a este mundo apocaliptico con Joel y Eli. (basado en el 2023)
+      The Last of Us es un videojuego de terror, acción y aventura desarrollado por la compañía estadounidense Naughty Dog y distribuido por Sony Computer Entertainment para la consola PlayStation 3 en 2013. La trama describe las vivencias de Joel y Ellie, un par de supervivientes de una pandemia en Estados Unidos que provoca la mutación de los seres humanos en criaturas caníbales.   
+    </ion-card-content>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
-</ion-content>
+      Selecciona tu plataforma:
+  
+      <ion-button class="ps4" (click)="presentAlert()">PS4</ion-button>
+      <ion-button class="xbox" (click)="presentAlert()">Xbox</ion-button>
+  </ion-card>

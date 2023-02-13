@@ -1,12 +1,24 @@
 import { Component } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
-  styleUrls: ['tab1.page.scss']
+  styleUrls: ['diseños.css']
 })
 export class Tab1Page {
 
-  constructor() {}
+  constructor(private alertcontroller: AlertController) {}
+  async presentAlert(){
+      const alert = await this.alertcontroller.create({
+        header: 'Alert',
+        subHeader: 'Iniciar Sesión',
+        message: 'Primero debes iniciar sesión',
+        buttons: ['OK']
+      });
+    
+      await alert.present();
+    }
+  }
 
-}
+
